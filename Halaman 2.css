@@ -20,26 +20,68 @@ body{
     filter: drop-shadow(0 0 3px #414144);
     background-size: auto;
 }
-.container{
-    position: relative;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-left: 80px;
-    padding-top: 100px;
-    flex-direction: column;
+
+.blog{
+    background: url("img/background.png") center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
-.box{
-    width: 90%;
-    margin: 40px 0;
-    justify-content: center;
+.B-desc{
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+}
+
+.B-desc2{
+    padding-top: 80px;
+    display: grid;
+}
+
+.B-desc3{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+}
+
+.BB-isi{
+    align-items: center;
+    padding: 32px 30px;
+    border-radius: .3em;
+    background-color: white;
+}
+
+.B-icon{
+    float: left;
+    padding-top: 10px;
+    padding-right: 30px;
     text-align: center;
-    border-radius: 10px;
-    background: #fff;
-    display: flex;
-    padding: 10px 10px;
-    color: rgba(0, 0, 0, 0.5);
 }
+
+.B-icon .bton{
+    padding-bottom: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #8ef7f7;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 22px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
+}
+
+.B-desc .BB-isi .B-icon p a{
+    color: black;
+}
+
+.blog .K-desc{
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+}
+
 .judul{
     justify-content: center;
     text-align: center;
@@ -49,7 +91,6 @@ body{
 .text{
     justify-content: left;
     text-align: left;
-    font-weight: bold;
     color: rgba(0, 0, 0, 0.788);
 }
 .btn{
@@ -65,12 +106,7 @@ body{
     margin-bottom: 22px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
 }
-.img{
-    width: px;
-}
-.right{
-    padding: 25px 40px;
-}
+
 .TableRight{
     position: relative;
     width: 375px;
@@ -150,3 +186,39 @@ tr:hover{
     font:16px/28px arial, sans-serif;
     font-size: 11px;
 }
+
+@media (max-width: 670px){
+    .B-desc{
+        padding-left: 19px;
+        font-size: 24px;
+    }
+
+    .B-icon {
+        padding-right: 0px;
+    }
+
+    .B-icon img{
+        width: 270px;
+    }
+
+    .judul{
+        justify-content: left;
+        text-align: left;
+        font-weight: bold;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.788);
+    }
+    .text{
+        justify-content: left;
+        text-align: left;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.788);
+    }
+
+    .TableRight{
+        font-size: small;
+        width: 300px;
+    }
+}
+
+
