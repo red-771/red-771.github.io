@@ -398,6 +398,10 @@ hr {
 .B-desc .BB-isi .B-icon p a{
     color: black;
 }
+.B-desc .BB-isi .B-icon  a:hover{
+    color: blue;
+}
+
 
 .BB-isi{
     padding-top: 10px;
