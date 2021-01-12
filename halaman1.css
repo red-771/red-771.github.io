@@ -1,13 +1,19 @@
-body {
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x:hidden; 
 }
 .banner {
-    position: relative;
+/*    position: relative;*/
     width: 100%;
-    min-height: 100vh; 
+    height: 100vh; 
     background-image: url(img/banner.png);
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
 }
@@ -75,7 +81,7 @@ nav .links li{
 nav .links a{
     display: block;
     padding: 1em;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -118,8 +124,9 @@ nav .icon-burger .line {
 }
 .S-desc{
     padding: 0.5em;
-    display: grid;
-    grid-gap: 2em;
+    display: flex;
+    flex-direction: column;
+    /*grid-gap: 2em;*/
 }
 
 .sub-isi{
@@ -362,56 +369,97 @@ hr {
 }
 
 .blog{
+    justify-content: center;
+    align-items: center;
     background: url("img/background.png") center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+/*    width: 100%;
+    height: 100%;*/
 }
 .B-title{
     margin-top: -30px;
     padding-top: 50px;
+    padding-bottom: 10px;
     color: black;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
 .B-desc{
-    padding-top: 40px;
-    padding-bottom: 40px;
+/*    padding-top: 40px;*/
+    padding-bottom: 50px;
+    position: relative;
+   /* width: 100vh;*/
     display: grid;
-}
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
 
-.BB-isi{
+}
+.B-desc .BB-isi{
+    position: relative;
+    padding: 8px;
+    margin:5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 32px 160px;
-    border-radius: .3em;
-    background-color: white;
+    background: #fff;
+
 }
 
-.B-icon{
-    float: left;
-    padding-top: 10px;
+.B-desc .BB-isi .B-icon{
+/*    padding-top: 10px;
     padding-right: 50px;
-    text-align: center;
+    text-align: center;*/
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #000;
+    justify-content: center;
+    align-items: center;
 }
 
-.B-desc .BB-isi .B-icon p a{
-    color: black;
+.B-desc .BB-isi .B-icon img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.B-desc .BB-isi .B-icon  a:hover{
+.B-desc .BB-isi .B-content{
+    position: relative;
+    width: 250px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.B-desc .BB-isi .B-content p{
+    padding: 20px;
+    text-align: center;
+    font-size: 16.5px;
+}
+
+.B-desc .BB-isi .B-content p a{
+    color: black;
+    text-decoration: none;
+    text-shadow: 3px 1px 1px rgba(0,0,0,0.2);
+}
+
+.B-desc .BB-isi .B-content p a:hover{
     color: blue;
 }
 
-
-.BB-isi{
+/*.BB-isi{
     padding-top: 10px;
-}
+}*/
 
-.blog .K-desc{
+/*.blog .K-desc{
     padding: 3em;
     display: grid;
     grid-gap: 2em;
-}
+}*/
 
 .ContactInfo{
     width: 100%;
@@ -461,6 +509,52 @@ hr {
     color: white;
     font-size: 11px;
 }
+
+@media screen and (min-width: 1654px) {
+/*    .banner .content h2 {
+        padding-top: 5px;
+        font-size: 3em;
+    }
+
+    .banner .content h3{
+        font-size: 2em;
+    }*/
+    .banner .content h2 {
+        font-size: 4em;
+        font-weight: 580;
+    }
+
+    .banner .content h3{
+        padding-top: 20px;
+        font-size: 3em;
+        font-weight: 280;
+    }
+
+}
+@media screen and (max-width: 1100px){
+    .AU-title{
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    .AU-desc{
+        padding-top: 42px;
+        padding-left: 50px;
+        padding-right: 580px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+    .AU-List{
+        padding-top: 42px;
+        padding-left: 50px;
+        font-size: 17px;
+    }
+    .banner{
+        height: 80vh;
+        padding-bottom: 10%;
+    }
+
+}
+
 
 
 @media screen and (max-width: 1080px) {
@@ -518,7 +612,39 @@ hr {
 
         font-size: 1.5em;
     }
+
+
+    .B-desc{
+        grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
+        margin: 50px;
+    }
+    .B-desc .BB-isi{
+        flex-direction: row;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    .B-desc .BB-isi .B-icon, 
+    .B-desc .BB-isi .B-content {
+        width: 50%;
+
+    }
+
     
+}
+
+@media screen and (max-width: 900px){
+    .AU-desc{
+        padding-top: 42px;
+        padding-left: 50px;
+        padding-right: 270px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+    .banner{
+        height: 100vh;
+        padding-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 760px){
@@ -534,53 +660,60 @@ hr {
     .banner .content h3{
         font-size: 1em;
     }
+
+    .banner{
+        height: 70vh;
+        padding-bottom: 5%;
+    }
+    .BB-isi{
+        /*display: flex;*/
+        /*flex-direction: column;*/*/
+        max-width: 100%;
+        padding: 10%;
+ /*       padding: 32px 160px;*/
+ /*       border-radius: .3em;*/
     
-}
+    }
+
+    .B-icon{
+        display: flex;
+        padding: auto;
+    }
+    .B-icon p{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
 
-@media screen and (min-width: 600px){
-    .S-desc{
+@media (min-width: 760px){
+/*    .S-desc{
         grid-template-columns: repeat(2,1fr);
+    */
+/*    .S-desc{
+        flex-direction: row;
+    }*/
+    .S-desc{
+        flex-direction: row;
     }
-    
+    .BB-isi{
+        /*flex-direction: row;*/
+    }
+
 
 }
 
 @media (min-width: 850px){
-    .S-desc{
+/*    .S-desc{
         grid-template-columns: repeat(3,1fr);
     }
+*/
 }
 
-@media (max-width: 1100px){
-    .AU-title{
-        padding-left: 50px;
-        font-size: 30px;
-    }
-    .AU-desc{
-        padding-top: 42px;
-        padding-left: 50px;
-        padding-right: 580px;
-        padding-bottom: 15px;
-        font-size: 15px;
-    }
-    .AU-List{
-        padding-top: 42px;
-        padding-left: 50px;
-        font-size: 17px;
-    }
 
-}
-@media (max-width: 900px){
-    .AU-desc{
-        padding-top: 42px;
-        padding-left: 50px;
-        padding-right: 270px;
-        padding-bottom: 15px;
-        font-size: 15px;
-    }
-
-@media (min-width: 740px) {
+@media screen and (min-width: 740px) {
     .AU-title{
         padding-left: 50px;
         font-size: 26px;
@@ -599,7 +732,7 @@ hr {
     }
 
 }
-@media (max-width: 580px){
+@media screen and (max-width: 580px){
     .AU-title{
         padding-left: 50px;
         font-size: 24px;
@@ -617,10 +750,30 @@ hr {
         padding-left: 50px;
         font-size: 12px;
     }
+    .banner{
+        height: 100vh;
+        padding-bottom: 10%;
+    }
+
+    .B-desc .BB-isi{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .B-desc .BB-isi .B-icon, 
+    .B-desc .BB-isi .B-content {
+        width: 100%;
+
+    }
+    .B-desc .BB-isi .B-content{
+        height: 200px;
+    }
+
+
 
 }
 
-@media (min-width: 600px){
+/*@media (min-width: 600px){
     .K-desc{
         grid-template-columns: repeat(2,1fr);
     }
@@ -631,3 +784,4 @@ hr {
         grid-template-columns: repeat(3,1fr);
     }
 }
+*/
