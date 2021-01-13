@@ -1,6 +1,4 @@
 
-
-
 body{
 	margin: 0;
 	padding: 0;
@@ -91,6 +89,7 @@ h3{
 @media (max-width: 860px ){
 	.container {
 		padding-top: 15%;
+		padding-right: 20%;
 }
 @media (max-width: 660px ){
 	body{
@@ -129,3 +128,26 @@ h3{
 	}
 
 }
+
+@media (max-width: 320px ){
+	.container {
+		padding-left: 30px;
+	}
+	.container .artikel1 h1 , .artikel2 h1, .artikel3 h1{
+		font-size: 18px;
+	}
+
+	.container .artikel1 .gambar img, .artikel2 .gambar img{
+		width: 150px;
+	}
+	.container .artikel1 .penulis ,
+	.container .artikel2 .penulis
+	{
+		font-size: 12px;
+	}
+	.text{
+		font-size: 14px;
+	}
+	h3{
+		font-size: 16px;
+	}
