@@ -1,809 +1,274 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    overflow-x:hidden; 
-}
-.banner {
-/*    position: relative;*/
-    width: 100%;
-    height: 100vh; 
-    background-image: url(img/banner.png);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-}
-.banner .content{
-    padding-left: 50px;
-    padding-top: 100px;
-    padding-bottom: 0;
-}
-.banner .content h2 {
-    padding-top: 30px;
-    margin: 0;
-    padding: 0;
-    font-size: 2.5em;
-    color:#fff;
-    font-weight: 550;
-    line-height: 1,5em;
-}
-
-.banner .content h3{
-    margin: 0;
-    padding: 0;
-    font-size: 1.7em;
-    color: #fff;
-    font-weight: 250;
-    line-height: 1.5em;
-}
-
-nav {
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    top: 0;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 5%;
-    height: 80px;
-    background-color: rgba(0,0,0,0.4);
-    /*background-color: #3e65da;*/
-}
-
-nav .logo {
-    float: left;
-    width: 250px;
-    height: 100%;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-}
-nav .links {
-    float: right;
-    padding: 0;
-    margin: 0;
-    width: 60%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-nav .links li{
-    list-style: none;
-}
-
-nav .links a{
-    display: block;
-    padding: 1em;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}
-
-#nav-toggle {
-    position: absolute;
-    top: -100px;
-}
-nav .icon-burger {
-    display: none;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-nav .icon-burger .line {
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
-}
-
-
-
-.Servis{
-    background: url("img/background.png") center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.S-title{
-    padding-top: 50px;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-.S-desc{
-    padding: 0.5em;
-    display: flex;
-    flex-direction: column;
-    /*grid-gap: 2em;*/
-}
-
-.sub-isi{
-    padding: 2em;
-    border-radius: .3em;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
-}
-
-.Servis .S-desc .sub-isi .icon, .S-isi{
-    text-align: center;
-    /* box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2); */
-}
-.S-isi{
-    padding-top: 10px;
-}
-
-.S-isi h3{
-    padding-bottom: 10px;
-}
-
-.S-Promo{
-    max-width: 100%;
-    padding: 0.5em;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    transition: 0.5s;
-
-}
-
-.S-Promo .SO-desc{
-    position: relative;
-    margin: 1px 1px;
-    width: 400px;
-    height: 310px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.S-Promo:hover .SO-desc{
-    filter: blur(5px);
-    transform: scale(.7);
-}
-.S-Promo .SO-desc:hover{
-    filter: blur(0px);
-    transform: scale(1);
-}
-
-
-.S-Promo .SO-desc:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height:100%;
-    background:#fff;
-    z-index: 1;
-    transition: 0.5s;
-}
-
-.S-Promo .SO-desc:hover:before{
-    background:#2f6775;
-    transform: scaleX(1.15);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-
-}
-.S-Promo .SO-desc .icon{
-    text-align: center;
-    z-index: 2;
-    padding-top: 0 20px;
-    transition: 0.5s;
-}
-
-.S-Promo .SO-desc:hover .icon{
-    color: #fff;
-}
-
-.S-Promo .SO-desc .icon h3, p, h4{
-    margin: 0;
-    padding: 0;
-}
-
-.S-Promo .SO-desc .icon a{
-    display: inline-block;
-    margin-top: 15px;
-    padding: 4px 10px;
-    background:#1f7f82;
-    justify-content: center;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration:none;
-}
-
-.S-Promo .SO-desc:hover .icon a{
-    background-color: #1a99c7;
-}
-
-.S-title{
-    padding-top: 50px;
-    padding-bottom: 80px;
-}
-
-
-.container-promo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 20vh;
-    transition: 0.5s;
-    padding-bottom: 70px;
-    
-}
-
-.container-promo .card{
-    margin: 0 -10px;
-    position: relative;
-    width: 250px;
-    height: 120px;
-    background-color: turquoise;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 10px;
-    border:5px;
-    border-color: #000;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2), -1px -1px 8px rgba(0,0,0,0.2);
-
-}
-.container-promo:hover .card .a, .b, .c, .d, .e{
-    filter: drop-shadow(8px 8px 10px gray);
-    transform: scale(1);
-
-}
-.container-promo .card:hover{
-    filter: drop-shadow(2px);
-    transform: scale3d(.7);
-    border-radius: 10px;
-
-}
-.container-promo .card:before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height:100%;
-    z-index: 1;
-    transition: 0.5s;
-    border:5px;
-    border-color: #000;
-} 
-.container-promo .card:hover:before{
-    background:#72E4E4;
-    background-color: rgb(175, 226, 221);
-    transform: scale(1.15);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.container-promo .card .content{
-    text-align: center;
-    z-index: 2;
-    padding-top: 0 20px;
-    transition: 0.5s;
-}
-
-hr {
-    border:0;
-    background:rgba(0,0,0,0.2);
-    height:1px;
-}
-
-.container-promo .card .content p{
-    font-size: 0.9em;
-}
-
-.container-promo .card:hover .content p{
-    font-size: 1.3em;
-}
-
-.container-promo .card .content a{
-    display: inline-block;
-    margin-top: 15px;
-    padding: 5px 10px;
-    background:#262626;
-    color: #fff;
-    text-decoration:none;
-    border-radius: 5px;
-}
-
-.container-promo .card:hover .content a{
-    background:#2196f3;
-}
-
-.About-us{
-    background: url("img/Untitled.png") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.AU-title{
-    padding-top: 62px;
-    padding-left: 100px;
-    color:black;
-    font-size: 30px;
-    font-weight: bold;
-}
-.AU-desc{
-    padding-top: 42px;
-    padding-left: 100px;
-    padding-right: 580px;
-    padding-bottom: 27px;
-    color: black;
-    font-size: 17px;
-    line-height: 1.6;
-    text-align: justify;
-}
-.AU-List{
-    padding-top: 42px;
-    padding-left: 100px;
-    color: black;
-    font-size: 17px;
-    line-height: 1.6;
-}
-.List-Title{
-    font-weight: bold;
-    line-height: 1.6;
-}
-.AU-List ul {
-    list-style: none;
-    line-height: 1.6;
-    padding-bottom: 91px;
-}
-  
-.AU-List  ul li:before {
-    content: '\2713\0020';
-}
-
-.blog{
-    justify-content: center;
-    align-items: center;
-    background: url("img/background.png") center;
-    background-size: cover;
-/*    width: 100%;
-    height: 100%;*/
-}
-.B-title{
-    margin-top: -30px;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
-.B-desc{
-/*    padding-top: 40px;*/
-    padding-bottom: 50px;
-    position: relative;
-   /* width: 100vh;*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-
-}
-.B-desc .BB-isi{
-    position: relative;
-    padding: 8px;
-    margin:5px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-
-}
-
-.B-desc .BB-isi .B-icon{
-/*    padding-top: 10px;
-    padding-right: 50px;
-    text-align: center;*/
-    position: relative;
-    width: 250px;
-    height: 250px;
-    background: #000;
-    justify-content: center;
-    align-items: center;
-}
-
-.B-desc .BB-isi .B-icon img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.B-desc .BB-isi .B-content{
-    position: relative;
-    width: 250px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.B-desc .BB-isi .B-content p{
-    padding: 20px;
-    text-align: center;
-    font-size: 16.5px;
-}
-
-.B-desc .BB-isi .B-content p a{
-    color: black;
-    text-decoration: none;
-    text-shadow: 3px 1px 1px rgba(0,0,0,0.2);
-}
-
-.B-desc .BB-isi .B-content p a:hover{
-    color: blue;
-}
-
-/*.BB-isi{
-    padding-top: 10px;
-}*/
-
-/*.blog .K-desc{
-    padding: 3em;
-    display: grid;
-    grid-gap: 2em;
-}*/
-
-.ContactInfo{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-image: url(img/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-.ContactInfo .Contact{
-    padding-left: 50px;
-    padding-top: 35px;
-    padding-bottom: 30px;
-}
-.ContactInfo .Contact .ContactUS{
-    padding-bottom: 30px;
-}
-.ContactInfo .Contact .box{
-    display: flex;
-    position: relative;
-    padding-left: 0;
-}
-.ContactInfo .Contact .box .icon{
-    display: flex;
-    min-width: 60px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-.ContactInfo .Contact .box .text{
-    line-height: 2;
-    padding-bottom: 5px;
-}
-.footer {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 50px;
-    background-color: #04102E;
-    background-size: auto;
-}
-
-.footer .Privacy {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-size: 11px;
-}
-
-@media screen and (min-width: 1654px) {
-/*    .banner .content h2 {
-        padding-top: 5px;
-        font-size: 3em;
-    }
-
-    .banner .content h3{
-        font-size: 2em;
-    }*/
-    .banner .content h2 {
-        font-size: 4em;
-        font-weight: 580;
-    }
-
-    .banner .content h3{
-        padding-top: 20px;
-        font-size: 3em;
-        font-weight: 280;
-    }
-
-}
-@media screen and (max-width: 1100px){
-    .AU-title{
-        padding-left: 50px;
-        font-size: 30px;
-    }
-    .AU-desc{
-        padding-top: 42px;
-        padding-left: 50px;
-        padding-right: 580px;
-        padding-bottom: 15px;
-        font-size: 15px;
-    }
-    .AU-List{
-        padding-top: 42px;
-        padding-left: 50px;
-        font-size: 17px;
-    }
-    .banner{
-        height: 80vh;
-        padding-bottom: 10%;
-    }
-
-}
-
-
-
-@media screen and (max-width: 1080px) {
-    nav .logo {
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
-    nav .links {
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 90.5px;
-        bottom: 100%;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: rgba(0,0,0,.8);
-        overflow: hidden;
-        box-sizing: border-box;
-        transition: all .5s ease-in-out;
-    }
-    nav .links a {
-        font-size: 27px;
-    }
-
-    nav :checked ~ .links {
-        bottom: 0;
-    }
-    nav .icon-burger {
-        display: block;
-    }
-    nav :checked ~ .icon-burger .line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
-    }
-    nav :checked ~ .icon-burger .line:nth-child(3) {
-        transform: translateY(-10px) rotate(-225deg);
-    }
-    nav :checked ~ .icon-burger .line:nth-child(2) {
-        opacity: 0;
-    }
-
-    .banner .content{
-        padding-left: 20px;
-        padding-top: 50px;
-    }
-    .banner .content h2 {
-        padding-top: 5px;
-        font-size: 2.1em;
-    }
-
-    .banner .content h3{
-
-        font-size: 1.5em;
-    }
-    .banner{
-        height: 100vh;
-        padding-bottom: 5%;
-    }
-
-
-    .B-desc{
-        grid-template-columns: repeat(auto-fit, minmax(100%,1fr));
-        margin: 50px;
-    }
-    .B-desc .BB-isi{
-        flex-direction: row;
-        margin: 10px 0;
-        border-radius: 10px;
-    }
-
-    .B-desc .BB-isi .B-icon, 
-    .B-desc .BB-isi .B-content {
-        width: 50%;
-
-    }
-
-    
-}
-
-@media screen and (max-width: 900px){
-    .AU-desc{
-        padding-top: 42px;
-        padding-left: 50px;
-        padding-right: 270px;
-        padding-bottom: 15px;
-        font-size: 15px;
-    }
-    .banner{
-        height: 100vh;
-        padding-bottom: 20%;
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 760px){
-    .banner .content{
-        padding-left: 20px;
-        padding-top: 50px;
-    }
-    .banner .content h2 {
-        padding-top: 5px;
-        font-size: 1.7em;
-    }
-
-    .banner .content h3{
-        font-size: 1em;
-    }
-
-    .banner{
-        height: 100vh;
-        padding-bottom: 5%;
-        font-size: 20px;
-    }
-    .BB-isi{
-        /*display: flex;*/
-        /*flex-direction: column;*/*/
-        max-width: 100%;
-        padding: 10%;
- /*       padding: 32px 160px;*/
- /*       border-radius: .3em;*/
-    
-    }
-
-    .B-icon{
-        display: flex;
-        padding: auto;
-    }
-    .B-icon p{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-}
-
-@media (min-width: 760px){
-/*    .S-desc{
-        grid-template-columns: repeat(2,1fr);
-    */
-/*    .S-desc{
-        flex-direction: row;
-    }*/
-    .S-desc{
-        flex-direction: row;
-    }
-    .BB-isi{
-        /*flex-direction: row;*/
-    }
-
-
-}
-
-@media (min-width: 850px){
-/*    .S-desc{
-        grid-template-columns: repeat(3,1fr);
-    }
-*/
-}
-@media (min-width: 1359px){
-    .AU-desc{
-        padding-right: 500px;
-
-    }
-}
-
-
-@media screen and (min-width: 740px) {
-    .AU-title{
-        padding-left: 50px;
-        font-size: 26px;
-    }
-    .AU-desc{
-        padding-top: 42px;
-        padding-left: 50px;
-        padding-right: 200px;
-        padding-bottom: 15px;
-        font-size: 15px;
-    }
-    .AU-List{
-        padding-top: 42px;
-        padding-left: 50px;
-        font-size: 15px;
-    }
-
-}
-@media screen and (max-width: 580px){
-    .AU-title{
-        padding-left: 50px;
-        font-size: 24px;
-    }
-    .AU-desc{
-        padding-top: 25px;
-        padding-left: 50px;
-        padding-right: 100px;
-        padding-bottom: 15px;
-        font-size: 12px;
-
-    }
-    .AU-List{
-        padding-top: 42px;
-        padding-left: 50px;
-        font-size: 12px;
-    }
-    .banner{
-        height: 100vh;
-        padding-bottom: 10%;
-        font-size: 17px;
-    }
-
-    .B-desc .BB-isi{
-        flex-direction: column;
-        margin: 10px 0;
-    }
-
-    .B-desc .BB-isi .B-icon, 
-    .B-desc .BB-isi .B-content {
-        width: 100%;
-
-    }
-    .B-desc .BB-isi .B-content{
-        height: 200px;
-    }
-}
-@media (max-width: 400px){
-    nav .logo img {
-        width: 200px;
-
-    }
-        .banner{
-        height: 100vh;
-        padding-bottom: 10%;
-        font-size: 14px;
-    }
-}
-
-/*@media (min-width: 600px){
-    .K-desc{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (min-width: 850px){
-    .k-desc{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-*/
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homie Care
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="halaman1.css">
+        <link rel="shortcut icon" type="image/x-icon" href="img/Homie.ico">
+    </head>
+    <body>
+        <div class="home">
+            <nav>
+                <input id="nav-toggle" type="checkbox">
+                <div class="logo">
+                    <a href="#home"><img src="img/fontHomie.png" ></a>
+                    
+                </div>
+                <ul class="links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servis">Sevis</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+
+
+            <div class="banner" id="home">
+                <div class="content">
+                    <h2>Buat janji dengan kami lalu
+                        <br>TingTong! Homie ada di depan rumahmu</h2>
+                    <h3>Kami adalah cleaning services professional dan <br>terpercaya ibu rumah tangga</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="Servis" id="servis">
+            <div class="S-title">
+                <p>Melayani Servis</p>
+            </div>
+            <div class="S-desc">
+                <div class="sub-isi">
+                    <div class="icon">
+                        <img src="img/karpet.png" width="100">
+                    </div>
+                    <div class="S-isi">
+                         <h3>Cuci Karpet</h3>
+                         <p>Kami Melayani Cuci Karpet Rumah, Masjid, dan Kantor Wilayah Jabodetabek.
+                        Kami Siap Datang Ke Lokasi.</p>
+                    </div>
+
+                </div>
+                <div class="sub-isi">
+                    <div class="icon">
+                        <img src="img/sofa.png" width="100">
+                    </div>
+                    <div class="S-isi">
+                        <h3>Cuci Sofa & Spring Bad</h3>
+                        <p>Kami mengerjakan cuci sofa, kursi kantor, spring bed dll. Khusus jabodetabek kami menerima order laundry panggilan.</p>
+                    </div>
+                </div>
+
+                <div class="sub-isi">
+                    <div class="icon">
+                        <img src="img/pel.png" width="100">
+                    </div>
+                    <div class="S-isi">
+                        <h3>Membersihkan Kolam Renang</h3>
+                        <p>Kami melayani membersihkan kolam renag rumah anda. kami siap datang ke lokasi.</p>
+                    </div>                    
+                </div>
+            </div>
+            
+            <div class="S-title">
+                <p>Promo Terbaru Dari Homie Care</p>
+            </div>
+            <div class="S-Promo">
+                <div class="SO-desc">
+                    <div class="icon">
+                        <img src="img/promo1.png" width="350">
+                        <h3>Promo Cuci Sofa & Karpet I</h3><br>
+                        <p>Periode Promo</p>
+                        <h4>10 Oktober - 31 Oktober</h4>
+                        <a href="Halaman 2.html">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="SO-desc">                
+                    <div class="icon">
+                        <img src="img/voucher.png" width="350" height="200">
+                        <br>
+                        <a href="Halaman 2.html">Lihat Detail</a>
+                    </div>
+                </div>  
+                <div class="SO-desc">
+                    <div class="icon">
+                        <img src="img/promo1.png" width="350">
+                        <h3>Promo Cuci Sofa & Karpet II</h3><br>
+                        <p>Periode Promo</p>
+                        <h4>10 Oktober - 31 Oktober</h4>
+                        <a href="Halaman 2.html">Lihat Detail</a>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="S-title">
+                <p>Paket Terbaik Dari Homie Care</p>
+            </div>
+            <div class="container-promo">
+                <div class="card">
+                    <div class="content">
+                        <div class="a">
+                            <h4>Paket A <br>Rp. 280.000</h4>
+                            <hr>
+                            <p>2 Spring Bed + Sofa Single</p>
+                            <a href="Halaman4.HTML">Buat Pesanan!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="b">
+                            <h4>Paket A <br>Rp. 280.000</h4>
+                            <hr>
+                            <p>2 Spring Bed + Sofa Single</p>
+                            <a href="Halaman4.HTML">Buat Pesanan!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="c">
+                            <h4>Paket A <br>Rp. 280.000</h4>
+                            <hr>
+                            <p>2 Spring Bed + Sofa Single</p>
+                            <a href="Halaman4.HTML">Buat Pesanan!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="d">
+                            <h4>Paket A <br>Rp. 280.000</h4>
+                            <hr>
+                            <p>2 Spring Bed + Sofa Single</p>
+                            <a href="Halaman4.HTML">Buat Pesanan!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="e">
+                            <h4>Paket A <br>Rp. 280.000</h4>
+                            <hr>
+                            <p>2 Spring Bed + Sofa Single</p>
+                            <a href="Halaman4.HTML">Buat Pesanan!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="About-us" id="about">
+            <div class="AU-title">
+                <p>Tentang Perusahaan Kami</p>
+            </div>
+            <div class="AU-desc">
+                <p>Kami Bisa Membantu Pekerjaan Rumah Anda dan Kami Tahu Anda Memiliki Pilihan Saat Mempertimbangkan untuk menyewa jasa pencuci Karena Itu Kami Terus Berupaya Untuk Meningkatkan Standar Kami dan Terus Memperbaiki Kekurangan Kami Agar Dapat Memberikan Layanan yang Terbaik Kepada Anda. </p>
+            </div>
+            <div class="AU-List">
+                <div class="List-Title">
+                    <p>Kami Menyediakan</p>
+                </div>
+                <ul>
+                    <li>Kunjungan Sekali</li>
+                    <li>Pembersihan Teruji & Pemeriksaan Latar Belakang</a></li>
+                    <li>Pembayaran Dapat Dilakukan Online Maupun Offline</li>
+                    <li>Selalu Menjaga Kebersihan Waktu Datang & Pergi</li>
+                    <li>Semua Bahan & Peralatan Yang Digunakan Milik Perusahaan</li>
+                    <li>Jaminan Kepuasan 100%</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="blog" id="blog">
+            <div class="B-title">
+                <p>Blog</p>
+            </div>
+            <div class="B-desc">
+                <div class="BB-isi">
+                    <div class="B-icon">
+                        <img src="img/kasur.jpg" width="250" height="250" ></div>
+                    <div class="B-content">
+                        <p>
+                            <a href="Halaman3.HTML#artikel1">Langkah Membersihkan Kasur <br> Spring Bed Dari Debu, Jamur, Dan Kutu</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="BB-isi">
+                    <div class="B-icon">
+                        <img src="img/data 1.png" width="250" height="250"></div>
+                    <div class="B-content">
+                        <p>
+                            <a href="Halaman3.HTML#artikel2">Tips Mudah Membersihkan Karpet</a>
+                        </p>
+                    </div>
+                </div >
+                <div class="BB-isi">
+                    <div class="B-icon">
+                        <img src="img/data 1.png" width="250" height="250"></div>
+                    <div class="B-content">
+                        <p>
+                            <a href="Halaman3.HTML#artikel2">Tips Mudah Membersihkan Karpet</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="BB-isi">
+                    <div class="B-icon">
+                        <img src="img/atria-hotel-gading-serpong-disinfektan 1.png" width="250" height="250"></div>
+                    <div class="B-content">
+                        <p>
+                            <a href="Halaman3.HTML#artikel1">Protokol Covid-19 Pada Proses Cleaning Services oleh Homie Care</a>
+                        </p>
+                    </div>
+                </div>
+        </div>
+
+        <div class="ContactInfo" id="contact">
+            <div class="Contact">
+                <div class="ContactUS">
+                    <h3>Contact Us</h3>
+                </div>
+                <div class="box">
+                    <div class="icon"> <img src="img/location.png" width="18px"></div>
+                    <div class="text">
+                        <p>Jalan Mawar Surabaya, No 30</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <img src="img/clock.png" width="18px"></div>
+                    <div class="text">
+                        <p>senin-jumat: 9:00 – 15:00 
+                        <br>sabtu-minggu: 11:00 – 16:00 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <a href="https://wa.me/6281331255119" target="_blank"><img src="img/whatsapp.png" width="18px"></a> </div>
+                    <div class="text">
+                        <p>0813-3125-5119
+                        <br>0824-xxx-xxx</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"> <img src="img/gmail.png" width="18px"></div>
+                    <div class="text">
+                        <p>Homie.care@gmail.com</p>
+                    </div>
+                </div>
+            </div> 
+        </div>  
+        <div class="footer">
+            <p class="Privacy">© 2020 Cleaning. Privacy Policy</p>
+        </div>
+
+
+    </body>
+
+</html>
