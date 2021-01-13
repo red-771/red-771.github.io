@@ -56,7 +56,7 @@ nav {
 
 nav .logo {
     float: left;
-    width: 40%;
+    width: 250px;
     height: 100%;
     display: flex;
     text-decoration: none;
@@ -649,7 +649,7 @@ hr {
     .banner{
         height: 100vh;
         padding-bottom: 20%;
-        font-size: 21px;
+        font-size: 18px;
     }
 }
 
@@ -670,7 +670,7 @@ hr {
     .banner{
         height: 100vh;
         padding-bottom: 5%;
-        font-size: 23px;
+        font-size: 20px;
     }
     .BB-isi{
         /*display: flex;*/
@@ -712,11 +712,11 @@ hr {
 
 }
 
-@media (min-width: 850px){
-/*    .S-desc{
-        grid-template-columns: repeat(3,1fr);
+@media (min-width: 1359px){
+    .AU-desc{
+        padding-right: 500px;
+
     }
-*/
 }
 
 
@@ -739,7 +739,7 @@ hr {
     }
 
 }
-@media screen and (max-width: 759px){
+@media screen and (max-width: 580px){
     .AU-title{
         padding-left: 50px;
         font-size: 24px;
@@ -747,7 +747,7 @@ hr {
     .AU-desc{
         padding-top: 25px;
         padding-left: 50px;
-        padding-right: 200px;
+        padding-right: 100px;
         padding-bottom: 15px;
         font-size: 12px;
 
@@ -760,7 +760,7 @@ hr {
     .banner{
         height: 100vh;
         padding-bottom: 10%;
-        font-size: 14px;
+        font-size: 17px;
     }
 
     .B-desc .BB-isi{
@@ -776,9 +776,17 @@ hr {
     .B-desc .BB-isi .B-content{
         height: 200px;
     }
+}
+@media (max-width: 400px){
+    nav .logo img {
+        width: 200px;
 
-
-
+    }
+        .banner{
+        height: 100vh;
+        padding-bottom: 10%;
+        font-size: 14px;
+    }
 }
 
 /*@media (min-width: 600px){
