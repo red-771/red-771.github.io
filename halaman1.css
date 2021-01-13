@@ -451,16 +451,6 @@ hr {
     color: blue;
 }
 
-/*.BB-isi{
-    padding-top: 10px;
-}*/
-
-/*.blog .K-desc{
-    padding: 3em;
-    display: grid;
-    grid-gap: 2em;
-}*/
-
 .ContactInfo{
     width: 100%;
     display: flex;
@@ -511,14 +501,6 @@ hr {
 }
 
 @media screen and (min-width: 1654px) {
-/*    .banner .content h2 {
-        padding-top: 5px;
-        font-size: 3em;
-    }
-
-    .banner .content h3{
-        font-size: 2em;
-    }*/
     .banner .content h2 {
         font-size: 4em;
         font-weight: 580;
@@ -554,8 +536,6 @@ hr {
     }
 
 }
-
-
 
 @media screen and (max-width: 1080px) {
     nav .logo {
@@ -673,13 +653,8 @@ hr {
         font-size: 20px;
     }
     .BB-isi{
-        /*display: flex;*/
-        /*flex-direction: column;*/*/
         max-width: 100%;
         padding: 10%;
- /*       padding: 32px 160px;*/
- /*       border-radius: .3em;*/
-    
     }
 
     .B-icon{
@@ -696,17 +671,8 @@ hr {
 }
 
 @media (min-width: 760px){
-/*    .S-desc{
-        grid-template-columns: repeat(2,1fr);
-    */
-/*    .S-desc{
-        flex-direction: row;
-    }*/
     .S-desc{
         flex-direction: row;
-    }
-    .BB-isi{
-        /*flex-direction: row;*/
     }
 
 
@@ -788,16 +754,3 @@ hr {
         font-size: 14px;
     }
 }
-
-/*@media (min-width: 600px){
-    .K-desc{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (min-width: 850px){
-    .k-desc{
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-*/
