@@ -649,6 +649,7 @@ hr {
     .banner{
         height: 100vh;
         padding-bottom: 20%;
+        font-size: 21px;
     }
 }
 
@@ -667,8 +668,9 @@ hr {
     }
 
     .banner{
-        height: 70vh;
+        height: 100vh;
         padding-bottom: 5%;
+        font-size: 23px;
     }
     .BB-isi{
         /*display: flex;*/
@@ -737,7 +739,7 @@ hr {
     }
 
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 759px){
     .AU-title{
         padding-left: 50px;
         font-size: 24px;
@@ -758,6 +760,7 @@ hr {
     .banner{
         height: 100vh;
         padding-bottom: 10%;
+        font-size: 14px;
     }
 
     .B-desc .BB-isi{
