@@ -24,13 +24,43 @@ body{
 	margin-bottom: 40%;
 	text-align: center;
 }
+ 
+input{
+  padding: 8px;
+  width: 50px;
+  background: #efefef;
+  border: 0;
+  font-size: 10pt;
+  margin: 6px 0px;
+  border-radius: 3px;
+  text-align: center;
+}
+ 
+label{
+	font-size: 12px;
+}
+span{
+	color: red;
+}
+/*#Message {
+  background: #8ED99C;
+  border: 0;
+  padding: 5px 8px;
+}*/
+/*input,
+textarea{
+	width: 250px;
+	border-radius: 4px;
+	box-shadow: 0 0 3px #aaa;
+}*/
 
-.button button{
+button{
 	background-color: #8ED99C;
 	box-sizing: content-box;
 	width: 200px;
 	height: 25px;
 	border: none;
+	border-radius: 3px;
 }
 
 button:focus{
@@ -83,6 +113,7 @@ h3{
 	color: white;
 	font-size: 11px;
 }
+
 @media (min-width: 1000px){
 	.container{
 		/*margin: 15% 0;*/
@@ -113,8 +144,8 @@ h3{
 		margin-top: 50%;
 		margin-bottom: 50%;
 	}
-	.button button{
-		width: 100px;
+	button{
+		width: 120px;
 	}
 	.Contact{
 		padding-left: 0;
