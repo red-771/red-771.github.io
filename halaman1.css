@@ -768,7 +768,8 @@ hr {
     .footer{
         padding-left: 20px;
     }
-    .Servis .S-title{
-        font-size: 26px;
+    .Servis .S-title, 
+    .blog .B-title{
+        font-size: 24px;
     }
 }
