@@ -218,7 +218,13 @@ tr:hover{
     .TableRight{
         font-size: small;
         width: 300px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 200px;
     }
 }
+
+
+
 
 
