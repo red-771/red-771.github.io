@@ -114,16 +114,16 @@ h3{
 	font-size: 11px;
 }
 
+/*Jika ukuran layar min/lebih dari 1000px*/
 @media (min-width: 1000px){
 	.container{
-		/*margin: 15% 0;*/
 		margin-top: 20%;
 		margin-bottom: 20%;
 	}
 }
+/*Jika ukuran layar antara 480px sampai 767px */
 @media (min-width: 480px) and (max-width: 767px){
 	.container{
-		/*margin: 15% 0;*/
 		margin-top: 40%;
 	}
 	.Contact{
@@ -134,13 +134,12 @@ h3{
 		padding-left: 20px;
 	}
 }
-
+/*Jika ukuran layar max 479px*/
 @media (max-width: 479px){
 	body{
 		font:14px/28px arial, sans-serif;
 	}
 	.container{
-		/*margin: 15% 0;*/
 		margin-top: 50%;
 		margin-bottom: 50%;
 	}
@@ -156,3 +155,4 @@ h3{
 		padding-left: 20px;
 	}
 }
+
