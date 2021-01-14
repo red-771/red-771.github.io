@@ -51,9 +51,7 @@ nav {
     padding: 0 5%;
     height: 80px;
     background-color: rgba(0,0,0,0.4);
-    /*background-color: #3e65da;*/
 }
-
 nav .logo {
     float: left;
     width: 250px;
@@ -71,13 +69,10 @@ nav .links {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-
 nav .links li{
     list-style: none;
 }
-
 nav .links a{
     display: block;
     padding: 1em;
@@ -109,6 +104,8 @@ nav .icon-burger .line {
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
+
+
 
 .Servis{
     background: url("img/background.png") center;
