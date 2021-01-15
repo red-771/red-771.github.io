@@ -742,6 +742,9 @@ hr {
     }
 }
 @media (max-width: 400px){
+    nav .links a {
+        font-size: 20px;
+    }
     nav .logo img {
         width: 200px;
     }
