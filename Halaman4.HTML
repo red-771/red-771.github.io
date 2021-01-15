@@ -6,7 +6,13 @@
 	<title>Homie Care</title>
 	<link rel="stylesheet" type="text/css" href="Halaman4.CSS">
 	<link rel="shortcut icon" type="image/x-icon" href="img/Homie.ico">
-	<script src="Halaman.js"></script>
+	<script>
+		function SendWa(){
+			var message = document.getElementById("message").value
+			// alert(message)
+			location.href = "https://wa.me/6281331255119?text=" + message
+		}
+	</script>
 </head>
 <body>
 	<div class="header">
